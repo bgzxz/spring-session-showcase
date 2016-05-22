@@ -1,12 +1,55 @@
-*.class
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @bgzxz
+ Unwatch 1
+  Star 0
+  Fork 0 bgzxz/tomcat-servlet3-showcase
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy path
+tomcat-servlet3-showcase/.gitignore
+cf3e51f  12 days ago
+@bgzxz bgzxz change gitignore
+1 contributor
+RawBlameHistory     36 lines (31 sloc)  281 Bytes
+.target/
+.logs/
+*/logs/
+*/*/logs/
+*/target/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
+# maven ignore
+target/
 *.war
-*.ear
+*.zip
+*.tar
+*.tar.gz
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
+logs/
+bin/
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
