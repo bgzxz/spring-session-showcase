@@ -26,25 +26,26 @@ public class Config {
     @Bean
     public CookieSerializer cookieSerializer() {
         DefaultCookieSerializer serializer = new DefaultCookieSerializer();
-        serializer.setCookieName("JSESSIONID");
+        serializer.setCookieName("token");
         serializer.setCookiePath("/");
         serializer.setDomainNamePattern("^.+?\\.(\\w+\\.[a-z]+)$");
         serializer.setUseHttpOnlyCookie(true);
         return serializer;
     }
+//    @Bean
+//    public HttpSessionStrategy httpSessionStrategy() {
+//        return new HeaderHttpSessionStrategy();
+//    }
     @Bean
     public HttpSessionListener myHttpSessionListener(){
         return new HttpSessionListener() {
             @Override
             public void sessionCreated(HttpSessionEvent se) {
-                System.out.println("Create:"+se.getSession());
             }
 
             @Override
             public void sessionDestroyed(HttpSessionEvent se) {
-                System.out.println("Destroyed:"+se.getSession());
             }
         };
     }
-
 }

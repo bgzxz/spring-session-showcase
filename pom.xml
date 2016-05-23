@@ -9,7 +9,6 @@
     <modules>
         <module>java-config</module>
         <module>xml-config</module>
-        <module>rest</module>
     </modules>
     <dependencyManagement>
         <dependencies>
